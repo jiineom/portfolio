@@ -19,13 +19,17 @@ header {
   background-color: white;
   padding: 24px 10%;
   border-bottom: 1px solid #e5e5e5;
+
+  /* 제목과 메뉴를 가로로 배치 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  margin: 0 0 20px;
+  margin: 0;
   font-size: 28px;
 }
-
 
 /* Navigation */
 
@@ -157,7 +161,7 @@ main h2 {
 }
 
 .keyword-list li:hover {
-  transform: translateY(-5px);s
+  transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -200,6 +204,10 @@ footer {
 
   header {
     padding: 24px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   main {
